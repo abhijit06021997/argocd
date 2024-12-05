@@ -30,3 +30,9 @@ kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
 12)we should have argocd yaml where speciified your repo url of deploymentyaml and service.yaml
 
 give path yoyr application and apply it 
+
+# if you are deploing manually on gui you must copy repo url from browser link of github  then enter folder/path  name where yaml file are present 
+
+# synchronise regularly when you update image or replicas
+
+#replicas firstly create automatically new and then old delete when you update 
