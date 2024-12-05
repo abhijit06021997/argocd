@@ -1,1 +1,11 @@
 # to setup argocd with helm package manager 
+# argocd app list  ---to see app 
+
+
+# or setupcluster
+#install kubectl  
+#install docker 
+#install minikube 
+#usermod -aG docker $ USER && newgrp docker 
+# install helm 
+
