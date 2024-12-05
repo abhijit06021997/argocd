@@ -19,7 +19,7 @@ kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
 
 7)username -admin and for password enter command as fallows
 
-8)kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" ---for docker engine or[kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 –d]
+8)  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" ---for docker engine or[kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 –d]
 
 9)decrypt password on browser with base64 and enter passowrd
 
@@ -28,6 +28,13 @@ kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
 11)deploy service and deployment in same namespace wheather uoy wont acess it
 
 12)we should have argocd yaml where speciified your repo url of deploymentyaml and service.yaml
+
+
+#   for declerative apply yaml
+
+# kubectl apply -f deploy.yaml -n nginx
+# kubectl apply -f svc.yaml -n nginx
+# kubectl apply -f argocd-application.yaml 
 
 give path yoyr application and apply it 
 
