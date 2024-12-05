@@ -26,3 +26,7 @@ kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
 10)copy declerative argocd yaml---->install.yaml
 
 11)deploy service and deployment in same namespace wheather uoy wont acess it
+
+12)we should have argocd yaml where speciified your repo url of deploymentyaml and service.yaml
+
+give path yoyr application and apply it 
