@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/abhijit06021997/argocd-apps
     targetRevision: HEAD
-    path: /
+    path: argocd-apps
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx
