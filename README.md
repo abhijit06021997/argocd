@@ -1,7 +1,7 @@
 # argocd setup steps we should have 1)kubernet cluster 
 this is my argocd yaml project
 
-1) create namespace kubectl create namespace argocd 
+1) install argocd 
 
 2)kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
@@ -36,3 +36,7 @@ give path yoyr application and apply it
 # synchronise regularly when you update image or replicas
 
 #replicas firstly create automatically new and then old delete when you update 
+
+#13) delete argocd 
+kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
