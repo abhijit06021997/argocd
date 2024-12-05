@@ -1,4 +1,4 @@
-# argocd setup steps we should have 1)kubernet cluster 2)for declerative we should have argo cd cli 
+# argocd setup steps we should have 1)kubernet cluster 
 this is my argocd yaml project
 
 1) create namespace kubectl create namespace argocd 
