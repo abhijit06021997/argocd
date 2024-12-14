@@ -3,8 +3,9 @@ this is my argocd yaml project
 
 #1) install argocd 
 
-#2)kubectl create namespace argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+#2)  kubectl create namespace argocd
+ 
+ # kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 #3)kubectl get svc -n argocd   ---to so service argocd-server
 
