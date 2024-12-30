@@ -48,5 +48,6 @@ give path yoyr application and apply it
 #replicas firstly create automatically new and then old delete when you update 
 
 #13) delete argocd 
+
 kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
