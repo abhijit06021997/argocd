@@ -5,11 +5,11 @@ this is my argocd yaml project
 
 #2)  kubectl create namespace argocd
  
- # kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+ # kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml -n argocd
 
 #3)kubectl get svc -n argocd   ---to so service argocd-server
 
-#4)kubectl edit svc argocd-server -n argocd or path it kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+#4)kubectl edit svc argocd-server -n argocd        or        path it       $ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 
 # using cloud pord forward command 
 
